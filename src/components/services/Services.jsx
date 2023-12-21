@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./services.css";
 
+import projectImage1 from "../../assets/Me/project1.png";
+import projectImage2 from "../../assets/Me/project2.png";
+import projectImage3 from "../../assets/Me/project3.png";
+
 const Services = () => {
   const githubRepoUrl = "https://github.com/your-username/your-repo-name";
 
@@ -12,16 +16,23 @@ const Services = () => {
   return (
     <section className="services section" id="services">
       <h2 className="section__title">Projects</h2>
-      <span className="section__subtitle">Some of what i did</span>
+      <span className="section__subtitle_special">Some of what i did</span>
+      <span className="section__subtitle_gras">
+        Excited to see more? Checkout my Github 😉
+      </span>
 
       <div className="services__container container grid">
         <div className="services__content">
           <div>
-            <i className="uil uil services__icon bx bx-border-radius"></i>
+            <img
+              src={projectImage1}
+              alt="Détection d'anomalies"
+              className="services__image"
+            />{" "}
             <h3 className="services__title">
-              Détection
+              ML-Powered Competitive
               <br />
-              d'anomalies
+              Anomaly Detection System
             </h3>
           </div>
 
@@ -43,7 +54,9 @@ const Services = () => {
                 className="uil uil-times services__modal-close"
               ></i>
 
-              <h3 className="services__modal-title">Détection d'anomalies</h3>
+              <h3 className="services__modal-title">
+                ML-Powered Competitive Anomaly Detection System
+              </h3>
               <p className="services__modal-description grid">
                 Système de veille concurrentielle basé sur un modèle de Machine
                 Learning pour la détection d'anomalies.
@@ -80,7 +93,7 @@ const Services = () => {
 
                 <li className="services__modal-service">
                   <a
-                    href={githubRepoUrl}
+                    href="https://github.com/Mehdijazouli/AnomalyDetection-Model--Airline-Competiton-Analysis.git"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -96,10 +109,14 @@ const Services = () => {
 
         <div className="services__content">
           <div>
-            <i className="uil uil services__icon bx bx-expand-horizontal"></i>
+            <img
+              src={projectImage2}
+              alt="Détection d'anomalies"
+              className="services__image"
+            />{" "}
             <h3 className="services__title">
-              Classification des tumeurs <br />
-              du cerveau
+              Brain Tumors <br />
+              Classification
             </h3>
           </div>
 
@@ -122,7 +139,7 @@ const Services = () => {
               ></i>
 
               <h3 className="services__modal-title">
-                Classification des tumeurs du cerveau
+                Brain Tumors Classification
               </h3>
               <p className="services__modal-description grid">
                 Projet de classification des tumeurs du cerveau
@@ -162,7 +179,7 @@ const Services = () => {
 
                 <li className="services__modal-service">
                   <a
-                    href={githubRepoUrl}
+                    href="https://github.com/Mehdijazouli/Brain-Tumor-Classification.git"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -178,7 +195,11 @@ const Services = () => {
 
         <div className="services__content">
           <div>
-            <i className="uil uil services__icon bx bx-edit"></i>
+            <img
+              src={projectImage3}
+              alt="Détection d'anomalies"
+              className="services__image"
+            />{" "}
             <h3 className="services__title">
               Fintech client
               <br />
@@ -223,7 +244,7 @@ const Services = () => {
 
                 <li className="services__modal-service">
                   <a
-                    href={githubRepoUrl}
+                    href="https://github.com/Mehdijazouli/Fintech-client-Transactions-Forcast.git"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

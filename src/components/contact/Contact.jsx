@@ -35,7 +35,7 @@ const Contact = () => {
               <span className="contact__card-data">Idrissi Jazouli Mehdi</span>
 
               <a
-                href="https://linkedin.com/in/mohamed-ait-fares-87b15a241"
+                href="https://www.linkedin.com/in/mehdi-idrissi-jazouli"
                 className="contact__button"
               >
                 Write me

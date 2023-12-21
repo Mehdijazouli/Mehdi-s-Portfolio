@@ -23,6 +23,10 @@
   border-radius: 0.75rem;
   text-align: center;
   padding: 1rem 1.25rem;
+
+  border: 1px solid grey; /* Change the border color to grey */
+  padding: 20px; /* Add padding for spacing */
+  text-align: center; /* Center the content horizontally */
 }
 
 .about__icon {

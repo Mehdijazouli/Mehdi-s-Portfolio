@@ -2,6 +2,11 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
+  --body-color-dark: #121212; /* Dark background color */
+  --text-color-dark: #ffffff; /* Dark text color */
+  --title-color-dark: #e0e0e0; /* Dark title color */
+  /* Ajoutez d'autres variables selon vos besoins */
+
   --header-height: 3rem;
 
   /*========== Colors ==========*/
@@ -72,7 +77,28 @@
 html {
   scroll-behavior: smooth;
 }
+body.dark-mode {
+  --hue: 0;
+  --sat: 0%;
+  --title-color: white;
+  --title-color-dark: black;
+  --text-color: white;
+  --body-color: black;
+  --container-color: black;
+}
+.dark-mode-button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: #333; /* Change the color as needed */
+  cursor: pointer;
+  /* Add any other styles you want */
+}
 
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+}
 body,
 button,
 input,
@@ -127,6 +153,19 @@ img {
   font-size: var(--small-font-size);
   margin-bottom: 4rem;
 }
+.section__subtitle_special {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.section__subtitle_gras {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
 
 .section__title,
 .section__subtitle {
@@ -145,6 +184,10 @@ img {
   gap: 1.5rem;
 }
 
+.grey {
+  border: 1px solid grey;
+}
+
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
@@ -156,7 +199,7 @@ img {
 }
 
 .button:hover {
-  background-color: var(--title-color-dark);
+  background-color: grey;
   transform: translateX(10px);
   transition: 0.4s;
 }

@@ -29,7 +29,7 @@ const Footer = () => {
 
         <div className="footer__social">
           <a
-            href="https://linkedin.com/in/mohamed-ait-fares-87b15a241"
+            href="https://www.linkedin.com/in/mehdi-idrissi-jazouli"
             className="footer__social-link"
             target="_blank"
             rel="noreferrer"
@@ -38,7 +38,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://github.com/mohamedaitfares"
+            href="https://github.com/Mehdijazouli"
             className="footer__social-link"
             target="_blank"
             rel="noreferrer"

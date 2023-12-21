@@ -20,10 +20,10 @@
 
 .contact__card {
   background-color: var(--container-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1rem;
   border-radius: 0.75rem;
   text-align: center;
+  border: 1px solid grey; /* Change the border color to grey */
+  padding: 20px; /* Add padding for spacing */
 }
 
 .contact__card-icon {
@@ -94,8 +94,9 @@
   left: 1.25rem;
   font-size: var(--smaller-font-size);
   padding: 0.25rem;
-  background-color: var(--body-color);
+  background-color: grey;
   z-index: 10;
+  border-radius: 1.5rem;
 }
 
 .contact__form-area {

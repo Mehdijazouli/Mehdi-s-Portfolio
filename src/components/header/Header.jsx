@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./header.css";
+import { FaSun, FaMoon } from "react-icons/fa"; // You can use other icon libraries or your custom SVG icons
 
 const Header = () => {
   /*=============== Change Background Header===================*/
@@ -12,16 +13,28 @@ const Header = () => {
   /*=============== Toggle Menu ===============*/
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
+  useEffect(() => {
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
+    setDarkMode(isDarkMode);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", darkMode);
+    document.body.classList.toggle("dark-mode", darkMode);
+  }, [darkMode]);
   return (
-    <header className="header">
+    <header className={`header ${darkMode ? "dark-mode" : ""}`}>
       <nav className="nav container">
-        <a
-          href="index.html
-            "
-          className="nav__logo"
-        >
-          Mehdi
-        </a>
+        <button onClick={toggleDarkMode} className="dark-mode-button">
+          {darkMode ? <FaSun /> : <FaMoon />}
+        </button>
+
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">

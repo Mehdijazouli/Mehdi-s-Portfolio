@@ -11,13 +11,13 @@
 .qualifications__button {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
-  color: var(--title-color-light);
+  color: grey;
   margin: 0 var(--mb-1);
   cursor: pointer;
 }
 
 .qualifications__button:hover {
-  color: var(--title-color-dark);
+  color: grey;
 }
 
 .qualifications__icon {
@@ -26,7 +26,7 @@
 }
 
 .qualifications__active {
-  color: var(--title-color-dark);
+  color: var(--title-color);
 }
 
 .qualifications__sections {

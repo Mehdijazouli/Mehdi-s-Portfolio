@@ -6,9 +6,11 @@
 
 .services__content {
   position: relative;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--container-color);
-  padding: 6rem 0 2rem 2.5rem;
+  border: 1px solid grey; /* Change the border color to grey */
+  padding: 20px; /* Add padding for spacing */
+  text-align: center; /* Center the content horizontally */
+  border-radius: 1.5rem;
 }
 
 .services__icon {
@@ -157,4 +159,11 @@
   .services__content {
     padding-right: 6rem;
   }
+}
+
+.services__image {
+  width: 200px; /* Adjust the size as needed */
+  height: auto; /* This keeps the aspect ratio */
+  margin-bottom: var(--mb-1);
+  border-radius: 15px;
 }
