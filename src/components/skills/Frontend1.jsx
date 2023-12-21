@@ -1,9 +1,9 @@
 import React from "react";
 
-const Frontend = () => {
+const Frontend1 = () => {
   return (
     <div className="skills__content">
-      <h3 className="skills__title">Data Science</h3>
+      <h3 className="skills__title">Others</h3>
 
       <div className="skills__box">
         <div className="skills__group">
@@ -11,7 +11,7 @@ const Frontend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills__name">Machine Learning</h3>
+              <h3 className="skills__name">Docker</h3>
             </div>
           </div>
 
@@ -19,7 +19,7 @@ const Frontend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills__name">Deep Learning</h3>
+              <h3 className="skills__name">MySql</h3>
             </div>
           </div>
 
@@ -27,7 +27,7 @@ const Frontend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills__name">Data analysis</h3>
+              <h3 className="skills__name">Java</h3>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ const Frontend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills__name">Data visualization</h3>
+              <h3 className="skills__name">Spark</h3>
             </div>
           </div>
 
@@ -45,7 +45,7 @@ const Frontend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills__name">Data mining</h3>
+              <h3 className="skills__name">Hadoop</h3>
             </div>
           </div>
 
@@ -53,7 +53,7 @@ const Frontend = () => {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills__name">Business Intelligence</h3>
+              <h3 className="skills__name">PowerBI</h3>
             </div>
           </div>
         </div>
@@ -62,4 +62,4 @@ const Frontend = () => {
   );
 };
 
-export default Frontend;
+export default Frontend1;

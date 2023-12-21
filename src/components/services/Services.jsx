@@ -16,8 +16,7 @@ const Services = () => {
   return (
     <section className="services section" id="services">
       <h2 className="section__title">Projects</h2>
-      <span className="section__subtitle_special">Some of what i did</span>
-      <span className="section__subtitle_gras">
+      <span className="section__subtitle_special">
         Excited to see more? Checkout my Github 😉
       </span>
 
